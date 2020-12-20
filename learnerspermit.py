@@ -41,8 +41,8 @@ def check():
                             'dateOfBirth': "", # enter your date of birth in year-month-day ie. 2000-12-31
                             'email': '', #enter your email
                             'externalId': '', # leave blank
-                            'firstName': "Sofiane", #first name
-                            'lastName': "Larbi", #first name
+                            'firstName': "", #first name
+                            'lastName': "", #first name
                             'phone': '' # enter phone in ###-###-#### format
                         },
                         'languageCode': 'en-US',
