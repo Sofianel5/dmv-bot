@@ -21,7 +21,7 @@ def check():
         dates = json.loads(requests.get(f"https://nysdmvqw.us.qmatic.cloud/qwebbook/rest/schedule/branches/{locations[location]}/services/{service_id}/dates?_=1608422256259").content)
         print(dates)
         if len(dates) > 0:
-            #os.system(f"terminal-notifier -title 'New Permit Test Dates' -message 'Register now at {location}'  -open ${site_url}")
+            os.system(f"terminal-notifier -title 'New Permit Test Dates' -message 'Register now at {location}'  -open ${site_url}")
             for obj in dates:
                 date = obj["date"]
                 times = json.loads(requests.get(f"https://nysdmvqw.us.qmatic.cloud/qwebbook/rest/schedule/branches/{locations[location]}/services/{service_id}/dates/{date}/times?_=1608422256273").content)
